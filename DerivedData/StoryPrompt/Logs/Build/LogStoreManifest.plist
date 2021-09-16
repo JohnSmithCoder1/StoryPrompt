@@ -5,6 +5,109 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>5BDCC492-3BB3-4DA3-95AE-8083030DF414</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5BDCC492-3BB3-4DA3-95AE-8083030DF414.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>StoryPrompt project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>StoryPrompt</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build StoryPrompt</string>
+			<key>timeStartedRecording</key>
+			<real>653495302.29094696</real>
+			<key>timeStoppedRecording</key>
+			<real>653495314.05706799</real>
+			<key>title</key>
+			<string>Build StoryPrompt</string>
+			<key>uniqueIdentifier</key>
+			<string>5BDCC492-3BB3-4DA3-95AE-8083030DF414</string>
+		</dict>
+		<key>E652BDD4-20CE-46A7-992E-3A15580BE1E2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E652BDD4-20CE-46A7-992E-3A15580BE1E2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>StoryPrompt project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>StoryPrompt</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build StoryPrompt</string>
+			<key>timeStartedRecording</key>
+			<real>653495328.07817996</real>
+			<key>timeStoppedRecording</key>
+			<real>653495328.12257099</real>
+			<key>title</key>
+			<string>Build StoryPrompt</string>
+			<key>uniqueIdentifier</key>
+			<string>E652BDD4-20CE-46A7-992E-3A15580BE1E2</string>
+		</dict>
+		<key>F4C489A4-836A-4151-B8F6-3261E6400D62</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F4C489A4-836A-4151-B8F6-3261E6400D62.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>StoryPrompt project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>StoryPrompt</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build StoryPrompt</string>
+			<key>timeStartedRecording</key>
+			<real>653497169.51768303</real>
+			<key>timeStoppedRecording</key>
+			<real>653497170.33603501</real>
+			<key>title</key>
+			<string>Build StoryPrompt</string>
+			<key>uniqueIdentifier</key>
+			<string>F4C489A4-836A-4151-B8F6-3261E6400D62</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
