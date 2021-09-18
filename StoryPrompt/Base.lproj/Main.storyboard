@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="gVk-7y-7Jq">
-                                <rect key="frame" x="20" y="101" width="374" height="377.5"/>
+                                <rect key="frame" x="20" y="101" width="374" height="430.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="R4I-md-PDh">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -78,6 +78,9 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="5" maxValue="10" minimumValueImage="5.circle" catalog="system" maximumValueImage="10.circle" translatesAutoresizingMaskIntoConstraints="NO" id="Ael-PH-d0m">
                                         <rect key="frame" x="-2" y="210.5" width="378" height="31"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="changeNumber:" destination="BYZ-38-t0r" eventType="valueChanged" id="SpZ-0g-Ygo"/>
+                                        </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HZ-bF-w9D">
                                         <rect key="frame" x="0.0" y="262.5" width="374" height="20.5"/>
@@ -91,8 +94,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Tl3-Bi-2Vn">
+                                        <rect key="frame" x="0.0" y="347.5" width="374" height="32"/>
+                                        <segments>
+                                            <segment title="Sci-Fi"/>
+                                            <segment title="Horror"/>
+                                        </segments>
+                                    </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHM-tx-s1h">
-                                        <rect key="frame" x="0.0" y="347.5" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="400.5" width="374" height="30"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Generate Story Prompt"/>
                                     </button>
@@ -107,6 +117,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gVk-7y-7Jq" secondAttribute="trailing" constant="20" id="rMM-Gk-aAK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adjectiveTextField" destination="GqE-Fj-JPO" id="xBb-fS-Non"/>
+                        <outlet property="nounTextField" destination="HD3-ec-7kL" id="Wiz-Df-FyN"/>
+                        <outlet property="numberLabel" destination="5GC-tk-uF7" id="B9C-R5-MY1"/>
+                        <outlet property="numberSlider" destination="Ael-PH-d0m" id="Map-9h-IJU"/>
+                        <outlet property="verbTextField" destination="jYC-Qy-1mG" id="tce-xP-NDR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
