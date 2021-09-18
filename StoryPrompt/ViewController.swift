@@ -22,13 +22,20 @@ class ViewController: UIViewController {
         storyPrompt.number = Int(sender.value)
     }
     
+    @IBAction func changeStoryType(_ sender: UISegmentedControl) {
+        if let genre = StoryPrompts.Genre(rawValue: sender.selectedSegmentIndex) {
+            storyPrompt.genre
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        numberSlider.value = 7.5
         storyPrompt.noun = "fish"
         storyPrompt.adjective = "silly"
         storyPrompt.verb = "fly"
-        storyPrompt.number = 10
+        storyPrompt.number = Int(numberSlider.value)
         print(storyPrompt)
     }
 }
