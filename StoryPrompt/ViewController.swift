@@ -15,14 +15,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberSlider: UISlider!
     @IBOutlet weak var numberLabel: UILabel!
     
+    let storyPrompt = StoryPromptEntry()
+    
     @IBAction func changeNumber(_ sender: UISlider) {
-        
+        numberLabel.text = "Number: \(Int(sender.value))"
+        storyPrompt.number = Int(sender.value)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let storyPrompt = StoryPromptEntry()
         storyPrompt.noun = "fish"
         storyPrompt.adjective = "silly"
         storyPrompt.verb = "fly"
