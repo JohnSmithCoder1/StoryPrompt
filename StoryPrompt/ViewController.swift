@@ -24,7 +24,9 @@ class ViewController: UIViewController {
     
     @IBAction func changeStoryType(_ sender: UISegmentedControl) {
         if let genre = StoryPrompts.Genre(rawValue: sender.selectedSegmentIndex) {
-            storyPrompt.genre
+            storyPrompt.genre = genre
+        } else {
+            storyPrompt.genre = .scifi
         }
     }
     
