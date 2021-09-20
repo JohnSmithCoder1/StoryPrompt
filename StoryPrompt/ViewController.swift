@@ -30,6 +30,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func generateStoryPrompt(_ sender: Any) {
+        updateStoryPrompt()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +42,6 @@ class ViewController: UIViewController {
         storyPrompt.adjective = "silly"
         storyPrompt.verb = "fly"
         storyPrompt.number = Int(numberSlider.value)
-        print(storyPrompt)
     }
     
     func updateStoryPrompt() {
