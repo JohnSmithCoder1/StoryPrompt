@@ -143,6 +143,7 @@
                         <outlet property="nounTextField" destination="HD3-ec-7kL" id="Wiz-Df-FyN"/>
                         <outlet property="numberLabel" destination="5GC-tk-uF7" id="B9C-R5-MY1"/>
                         <outlet property="numberSlider" destination="Ael-PH-d0m" id="Map-9h-IJU"/>
+                        <outlet property="storyPromptImageView" destination="w8q-ST-7Qr" id="F4m-Hl-vEb"/>
                         <outlet property="verbTextField" destination="jYC-Qy-1mG" id="tce-xP-NDR"/>
                     </connections>
                 </viewController>
