@@ -22,7 +22,7 @@ class StoryPromptEntry {
     }
     
     func isValid() -> Bool {
-        return !(verb.isEmpty && adjective.isEmpty && noun.isEmpty)
+        return !(verb.isEmpty || adjective.isEmpty || noun.isEmpty)
     }
 }
 

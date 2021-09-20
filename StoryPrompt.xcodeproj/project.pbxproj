@@ -60,10 +60,9 @@
 		0556270326F38B34007C8E77 /* StoryPrompt */ = {
 			isa = PBXGroup;
 			children = (
+				05B7EE8A26F8F1D700CD9D99 /* Model */,
 				0556270426F38B34007C8E77 /* AppDelegate.swift */,
 				0556270626F38B34007C8E77 /* SceneDelegate.swift */,
-				0556271826F392A7007C8E77 /* StoryPromptEntry.swift */,
-				0556271A26F39310007C8E77 /* StoryPrompts.swift */,
 				0556270826F38B34007C8E77 /* ViewController.swift */,
 				0556270A26F38B34007C8E77 /* Main.storyboard */,
 				0556270D26F38B37007C8E77 /* Assets.xcassets */,
@@ -71,6 +70,15 @@
 				0556271226F38B37007C8E77 /* Info.plist */,
 			);
 			path = StoryPrompt;
+			sourceTree = "<group>";
+		};
+		05B7EE8A26F8F1D700CD9D99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0556271826F392A7007C8E77 /* StoryPromptEntry.swift */,
+				0556271A26F39310007C8E77 /* StoryPrompts.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
