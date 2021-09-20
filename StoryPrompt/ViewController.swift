@@ -40,4 +40,19 @@ class ViewController: UIViewController {
         storyPrompt.number = Int(numberSlider.value)
         print(storyPrompt)
     }
+    
+    func updateStoryPrompt() {
+        storyPrompt.noun = nounTextField.text ?? ""
+        storyPrompt.adjective = adjectiveTextField.text ?? ""
+        storyPrompt.verb = verbTextField.text ?? ""
+    }
+}
+
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        updateStoryPrompt()
+        
+        return true
+    }
 }
