@@ -86,8 +86,8 @@
 		05B7EE8D26F91DF300CD9D99 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				05B7EE8B26F91DE500CD9D99 /* StoryPromptViewController.swift */,
 				0556270826F38B34007C8E77 /* AddStoryPromptViewController.swift */,
+				05B7EE8B26F91DE500CD9D99 /* StoryPromptViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";

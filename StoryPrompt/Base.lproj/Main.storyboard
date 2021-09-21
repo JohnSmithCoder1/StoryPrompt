@@ -141,7 +141,7 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Generate Story Prompt"/>
                                         <connections>
-                                            <segue destination="gDt-2V-MOx" kind="show" id="dhf-KF-spy"/>
+                                            <segue destination="gDt-2V-MOx" kind="show" identifier="StoryPrompt" id="dhf-KF-spy"/>
                                         </connections>
                                     </button>
                                 </subviews>
