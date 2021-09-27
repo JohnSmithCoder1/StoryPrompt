@@ -53,4 +53,17 @@ class StoryPromptTableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyPrompt = storyPrompts[indexPath.row]
+        performSegue(withIdentifier: "ShowStoryPrompt", sender: storyPrompt)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowStoryPrompt" {
+            guard let storyPromptViewController = segue.destination as? StoryPromptViewController,
+                  let storyPrompt = sender as? StoryPromptEntry else { return }
+            storyPromptViewController.storyPrompt = storyPrompt
+        }
+    }
 }
