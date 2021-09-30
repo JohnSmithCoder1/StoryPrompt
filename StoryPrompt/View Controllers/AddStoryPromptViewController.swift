@@ -19,6 +19,10 @@ class AddStoryPromptViewController: UIViewController {
     
     let storyPrompt = StoryPromptEntry()
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     @IBAction func changeNumber(_ sender: UISlider) {
         numberLabel.text = "Number: \(Int(sender.value))"
         storyPrompt.number = Int(sender.value)
@@ -34,6 +38,7 @@ class AddStoryPromptViewController: UIViewController {
     
     @IBAction func generateStoryPrompt(_ sender: Any) {
         updateStoryPrompt()
+        
         if storyPrompt.isValid() {
             performSegue(withIdentifier: "StoryPrompt", sender: nil)
         } else {
@@ -52,9 +57,11 @@ class AddStoryPromptViewController: UIViewController {
         
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeImage))
         storyPromptImageView.addGestureRecognizer(gestureRecognizer)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(updateStoryPrompt), name: UIResponder.keyboardDidHideNotification, object: nil)
     }
     
-    func updateStoryPrompt() {
+    @objc func updateStoryPrompt() {
         storyPrompt.noun = nounTextField.text ?? ""
         storyPrompt.adjective = adjectiveTextField.text ?? ""
         storyPrompt.verb = verbTextField.text ?? ""
@@ -82,7 +89,6 @@ class AddStoryPromptViewController: UIViewController {
 extension AddStoryPromptViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        updateStoryPrompt()
         
         return true
     }

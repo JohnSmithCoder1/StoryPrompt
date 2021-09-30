@@ -10,15 +10,39 @@ import UIKit
 class StoryPromptTableViewController: UITableViewController {
     
     @IBAction func saveStoryPrompt(unwindSegue: UIStoryboardSegue) {
-        guard let storyPromptViewController = unwindSegue.source as? StoryPromptViewController,
-              let storyPrompt = storyPromptViewController.storyPrompt else { return }
-        storyPrompts.append(storyPrompt)
-        tableView.reloadData()
+//        guard let storyPromptViewController = unwindSegue.source as? StoryPromptViewController,
+//              let storyPrompt = storyPromptViewController.storyPrompt else { return }
+//        storyPrompts.append(storyPrompt)
+//        tableView.reloadData()
     }
     
     @IBAction func cancelStoryPrompt(unwindSegue: UIStoryboardSegue) { }
 
     var storyPrompts = [StoryPromptEntry]()
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(updateStoryPromptList(notification:)), name: .StoryPromptSaved, object: nil)
+    }
+    
+    @objc func updateStoryPromptList(notification: Notification) {
+        guard let storyPrompt = notification.object as? StoryPromptEntry else { return }
+        storyPrompts.append(storyPrompt)
+        tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowStoryPrompt" {
+            guard let storyPromptViewController = segue.destination as? StoryPromptViewController,
+                  let storyPrompt = sender as? StoryPromptEntry else { return }
+            storyPromptViewController.storyPrompt = storyPrompt
+        }
+    }
 
     // MARK: - Table view data source
 
@@ -41,13 +65,5 @@ class StoryPromptTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyPrompt = storyPrompts[indexPath.row]
         performSegue(withIdentifier: "ShowStoryPrompt", sender: storyPrompt)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowStoryPrompt" {
-            guard let storyPromptViewController = segue.destination as? StoryPromptViewController,
-                  let storyPrompt = sender as? StoryPromptEntry else { return }
-            storyPromptViewController.storyPrompt = storyPrompt
-        }
     }
 }
