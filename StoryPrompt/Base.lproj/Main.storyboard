@@ -192,44 +192,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="urN-8I-sis">
-                                <rect key="frame" x="153" y="832" width="108" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuP-xi-T7n">
-                                        <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Cancel"/>
-                                        <connections>
-                                            <action selector="cancelStoryPrompt:" destination="gDt-2V-MOx" eventType="touchUpInside" id="3n0-3r-F05"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SiS-Bh-m4m">
-                                        <rect key="frame" x="74" y="0.0" width="34" height="30"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Save"/>
-                                        <connections>
-                                            <segue destination="CfR-Go-rJg" kind="unwind" unwindAction="saveStoryPromptWithUnwindSegue:" id="g0U-A0-0zR"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RcK-Xh-iD7"/>
                         <color key="backgroundColor" red="0.0" green="0.89411764709999997" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HsT-h7-FZm" firstAttribute="centerX" secondItem="meR-Lq-f6s" secondAttribute="centerX" id="MtB-qK-XEI"/>
                             <constraint firstItem="HsT-h7-FZm" firstAttribute="centerY" secondItem="meR-Lq-f6s" secondAttribute="centerY" id="Rfy-NB-cpd"/>
-                            <constraint firstItem="urN-8I-sis" firstAttribute="bottom" secondItem="RcK-Xh-iD7" secondAttribute="bottom" id="TUT-rs-4KU"/>
                             <constraint firstItem="Qh5-fy-v7v" firstAttribute="centerX" secondItem="HsT-h7-FZm" secondAttribute="centerX" id="cBu-3Z-yNk"/>
                             <constraint firstItem="HsT-h7-FZm" firstAttribute="width" secondItem="meR-Lq-f6s" secondAttribute="width" id="m45-4N-uqD"/>
                             <constraint firstItem="Qh5-fy-v7v" firstAttribute="centerY" secondItem="HsT-h7-FZm" secondAttribute="centerY" id="pLN-nQ-pVo"/>
-                            <constraint firstItem="urN-8I-sis" firstAttribute="centerX" secondItem="meR-Lq-f6s" secondAttribute="centerX" id="xae-O7-e5D"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4i7-Yq-3b4"/>
                     <connections>
                         <outlet property="storyPromptTextView" destination="Qh5-fy-v7v" id="B2z-UT-wlW"/>
                         <segue destination="CfR-Go-rJg" kind="unwind" identifier="CancelStoryPrompt" unwindAction="cancelStoryPromptWithUnwindSegue:" id="5hg-zn-0kz"/>
+                        <segue destination="CfR-Go-rJg" kind="unwind" identifier="SaveStoryPrompt" unwindAction="saveStoryPromptWithUnwindSegue:" id="S1M-37-l4T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ie-Xv-EwG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
