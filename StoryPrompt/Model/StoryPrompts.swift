@@ -19,12 +19,9 @@ class StoryPrompts {
     
     static var stubs = [
         [
-            "UNICORNS: The <adjective> legion, a horrific cult led by a cyborg <noun>, <verb> <number> missles at Earth.",
-            "UNICORNS: Harid Ryder is a half human, half <noun>. He <verb> the last remaining <noun> in a <adjective> quest before the sun explodes in <number> days.",
-            "UNICORNS: Axel is a <noun> who hacks into a <adjective> agency. In it, he <verb> a secret plot to lace <number> hotdogs with <noun> dust.",
-            "UNICORNS: The Tressal-1 is a <adjective> <noun> on an intergalatic quest. It <verb> from earth, hoping to reach a nearby star system in <number> of decades.",
-            "UNICORNS: Aliens <verb> on the <noun>. The aliens declare all the water belongs to them. They give <number> of days before they start their <adjective> plan.",
-            "UNICORNS: A world war ends when a <adjective> <noun> <verb> on the earth. People have only <number> of days to unite or be destroyed."
+            "The <adjective> <noun> saved the day when they <verb> over <number> oceans to return the crown to the princess.",
+            "There once was a hero named <noun>, who was very wise. <noun> left home to go on a very <adjective> adventure. After travelling for <number> years, the <noun> finally <action> all the way back home.",
+            "<number> years ago, there was a very <adjective> storm, but <hero> wasn't scared. <hero> knew exactly what to do. They had to <action> up to the clouds in order to quiet the storm and save the day. The end."
         ],
         [
             ""

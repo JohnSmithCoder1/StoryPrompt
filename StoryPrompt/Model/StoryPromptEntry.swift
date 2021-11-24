@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class StoryPromptEntry {
-    var number = 0
+    var number = 7
     var verb = ""
     var adjective = ""
     var noun = ""
