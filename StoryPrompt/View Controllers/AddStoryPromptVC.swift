@@ -42,7 +42,7 @@ class AddStoryPromptViewController: UIViewController {
         if storyPrompt.isValid() {
             performSegue(withIdentifier: "StoryPrompt", sender: nil)
         } else {
-            let alert = UIAlertController(title: "Invalid Story Prompt", message: "Please fill out all of the fields", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Not Enough information", message: "Please fill out all of the fields if you want to create a new story", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .default) { action in }
             alert.addAction(action)
             present(alert, animated: true)
@@ -52,7 +52,7 @@ class AddStoryPromptViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        numberSlider.value = 7.5
+        numberSlider.value = 6
     }
     
     @objc func updateStoryPrompt() {
