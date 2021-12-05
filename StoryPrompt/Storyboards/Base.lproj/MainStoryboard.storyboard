@@ -157,6 +157,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unicorn-background" translatesAutoresizingMaskIntoConstraints="NO" id="KDB-fb-5TV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="object-badge-banner" translatesAutoresizingMaskIntoConstraints="NO" id="HsT-h7-FZm">
                                 <rect key="frame" x="0.0" y="-52" width="414" height="1000"/>
                             </imageView>
@@ -175,10 +179,14 @@
                         <viewLayoutGuide key="safeArea" id="RcK-Xh-iD7"/>
                         <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="KDB-fb-5TV" firstAttribute="leading" secondItem="meR-Lq-f6s" secondAttribute="leading" id="ENm-nS-5mr"/>
+                            <constraint firstItem="KDB-fb-5TV" firstAttribute="top" secondItem="RcK-Xh-iD7" secondAttribute="top" id="HIP-6n-K5K"/>
+                            <constraint firstAttribute="trailing" secondItem="KDB-fb-5TV" secondAttribute="trailing" id="MhE-rE-Sc0"/>
                             <constraint firstItem="HsT-h7-FZm" firstAttribute="centerX" secondItem="meR-Lq-f6s" secondAttribute="centerX" id="MtB-qK-XEI"/>
                             <constraint firstItem="HsT-h7-FZm" firstAttribute="centerY" secondItem="meR-Lq-f6s" secondAttribute="centerY" id="Rfy-NB-cpd"/>
                             <constraint firstItem="Qh5-fy-v7v" firstAttribute="centerX" secondItem="HsT-h7-FZm" secondAttribute="centerX" id="cBu-3Z-yNk"/>
                             <constraint firstItem="HsT-h7-FZm" firstAttribute="width" secondItem="meR-Lq-f6s" secondAttribute="width" id="m45-4N-uqD"/>
+                            <constraint firstItem="RcK-Xh-iD7" firstAttribute="bottom" secondItem="KDB-fb-5TV" secondAttribute="bottom" id="oop-pQ-c1Q"/>
                             <constraint firstItem="Qh5-fy-v7v" firstAttribute="centerY" secondItem="HsT-h7-FZm" secondAttribute="centerY" id="pLN-nQ-pVo"/>
                         </constraints>
                     </view>
@@ -251,6 +259,7 @@
         <image name="5.circle" catalog="system" width="128" height="121"/>
         <image name="object-badge-banner" width="1000" height="1000"/>
         <image name="object-object_box-of-books" width="1000" height="1000"/>
+        <image name="unicorn-background" width="1280" height="1280"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
