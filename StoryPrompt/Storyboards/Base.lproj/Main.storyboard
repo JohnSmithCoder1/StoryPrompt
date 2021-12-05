@@ -117,7 +117,7 @@
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHM-tx-s1h">
                                         <rect key="frame" x="0.0" y="484.5" width="374" height="30"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="linkColor"/>
                                         <state key="normal" title="Create New Story"/>
                                         <connections>
                                             <action selector="generateStoryPrompt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GeI-8v-U3i"/>
@@ -127,7 +127,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.66274509803921566" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gVk-7y-7Jq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="CoA-lm-YmD"/>
                             <constraint firstItem="gVk-7y-7Jq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Np4-IA-nO9"/>
@@ -157,10 +157,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unicorn-background" translatesAutoresizingMaskIntoConstraints="NO" id="KDB-fb-5TV">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qh5-fy-v7v">
                                 <rect key="frame" x="60" y="188" width="294" height="574"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -170,14 +166,10 @@
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RcK-Xh-iD7"/>
-                        <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.66249124649859936" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="RcK-Xh-iD7" firstAttribute="bottom" secondItem="Qh5-fy-v7v" secondAttribute="bottom" constant="100" id="3xP-Qr-hga"/>
-                            <constraint firstItem="KDB-fb-5TV" firstAttribute="leading" secondItem="meR-Lq-f6s" secondAttribute="leading" id="ENm-nS-5mr"/>
-                            <constraint firstItem="KDB-fb-5TV" firstAttribute="top" secondItem="RcK-Xh-iD7" secondAttribute="top" id="HIP-6n-K5K"/>
-                            <constraint firstAttribute="trailing" secondItem="KDB-fb-5TV" secondAttribute="trailing" id="MhE-rE-Sc0"/>
                             <constraint firstItem="Qh5-fy-v7v" firstAttribute="leading" secondItem="RcK-Xh-iD7" secondAttribute="leading" constant="60" id="jha-k0-1vf"/>
-                            <constraint firstItem="RcK-Xh-iD7" firstAttribute="bottom" secondItem="KDB-fb-5TV" secondAttribute="bottom" id="oop-pQ-c1Q"/>
                             <constraint firstItem="Qh5-fy-v7v" firstAttribute="top" secondItem="RcK-Xh-iD7" secondAttribute="top" constant="100" id="q6J-Da-RLU"/>
                             <constraint firstItem="RcK-Xh-iD7" firstAttribute="trailing" secondItem="Qh5-fy-v7v" secondAttribute="trailing" constant="60" id="waz-x0-kpn"/>
                         </constraints>
@@ -201,7 +193,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hGH-Oa-Jp5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.66249124650000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryPromptCell" textLabel="Nnl-d5-Bse" style="IBUITableViewCellStyleDefault" id="h3B-oO-m3n">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -219,7 +211,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.66249124650000002" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -250,9 +242,11 @@
         <image name="10.circle" catalog="system" width="128" height="121"/>
         <image name="2.circle" catalog="system" width="128" height="121"/>
         <image name="object-object_box-of-books" width="1000" height="1000"/>
-        <image name="unicorn-background" width="1280" height="1280"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
