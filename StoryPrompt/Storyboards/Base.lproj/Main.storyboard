@@ -161,12 +161,8 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qh5-fy-v7v">
-                                <rect key="frame" x="87" y="393" width="240" height="110"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="a4S-bW-gYq"/>
-                                    <constraint firstAttribute="width" constant="240" id="oQP-bi-Rha"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qh5-fy-v7v">
+                                <rect key="frame" x="60" y="188" width="294" height="574"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -176,10 +172,14 @@
                         <viewLayoutGuide key="safeArea" id="RcK-Xh-iD7"/>
                         <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="RcK-Xh-iD7" firstAttribute="bottom" secondItem="Qh5-fy-v7v" secondAttribute="bottom" constant="100" id="3xP-Qr-hga"/>
                             <constraint firstItem="KDB-fb-5TV" firstAttribute="leading" secondItem="meR-Lq-f6s" secondAttribute="leading" id="ENm-nS-5mr"/>
                             <constraint firstItem="KDB-fb-5TV" firstAttribute="top" secondItem="RcK-Xh-iD7" secondAttribute="top" id="HIP-6n-K5K"/>
                             <constraint firstAttribute="trailing" secondItem="KDB-fb-5TV" secondAttribute="trailing" id="MhE-rE-Sc0"/>
+                            <constraint firstItem="Qh5-fy-v7v" firstAttribute="leading" secondItem="RcK-Xh-iD7" secondAttribute="leading" constant="60" id="jha-k0-1vf"/>
                             <constraint firstItem="RcK-Xh-iD7" firstAttribute="bottom" secondItem="KDB-fb-5TV" secondAttribute="bottom" id="oop-pQ-c1Q"/>
+                            <constraint firstItem="Qh5-fy-v7v" firstAttribute="top" secondItem="RcK-Xh-iD7" secondAttribute="top" constant="100" id="q6J-Da-RLU"/>
+                            <constraint firstItem="RcK-Xh-iD7" firstAttribute="trailing" secondItem="Qh5-fy-v7v" secondAttribute="trailing" constant="60" id="waz-x0-kpn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4i7-Yq-3b4"/>
@@ -192,7 +192,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ie-Xv-EwG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="CfR-Go-rJg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-678" y="530"/>
+            <point key="canvasLocation" x="-678.26086956521749" y="529.6875"/>
         </scene>
         <!--Story Prompt Table View Controller-->
         <scene sceneID="zDP-3i-GzC">
