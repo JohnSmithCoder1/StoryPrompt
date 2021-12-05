@@ -9,7 +9,7 @@ import Foundation
 
 class StoryPrompts {
     enum Genre: Int {
-        case scifi, horror
+        case unicorns
     }
     
     static func promptFor(genre: Genre) -> String {

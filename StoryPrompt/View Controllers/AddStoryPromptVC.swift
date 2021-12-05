@@ -32,7 +32,7 @@ class AddStoryPromptViewController: UIViewController {
         if let genre = StoryPrompts.Genre(rawValue: sender.selectedSegmentIndex) {
             storyPrompt.genre = genre
         } else {
-            storyPrompt.genre = .scifi
+            storyPrompt.genre = .unicorns
         }
     }
     

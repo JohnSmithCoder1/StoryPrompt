@@ -14,7 +14,7 @@ class StoryPromptEntry {
     var adjective = ""
     var noun = ""
     var image = UIImage(named: "object-object_box-of-books")
-    var genre = StoryPrompts.Genre.scifi
+    var genre = StoryPrompts.Genre.unicorns
     var text = ""
     
     init() {
