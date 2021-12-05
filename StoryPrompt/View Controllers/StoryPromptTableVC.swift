@@ -56,7 +56,7 @@ class StoryPromptTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StoryPromptCell", for: indexPath)
-        cell.textLabel?.text = "Prompt \(indexPath.row + 1)"
+        cell.textLabel?.text = "My Story \(indexPath.row + 1)"
         cell.imageView?.image = storyPrompts[indexPath.row].image
         
         return cell

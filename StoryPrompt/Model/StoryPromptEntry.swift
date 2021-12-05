@@ -9,12 +9,12 @@ import Foundation
 import UIKit
 
 class StoryPromptEntry {
-    var number = 0
+    var number = 7
     var verb = ""
     var adjective = ""
     var noun = ""
     var image = UIImage(named: "object-object_box-of-books")
-    var genre = StoryPrompts.Genre.scifi
+    var genre = StoryPrompts.Genre.unicorns
     var text = ""
     
     init() {
