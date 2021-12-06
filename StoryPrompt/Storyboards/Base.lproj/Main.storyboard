@@ -34,7 +34,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="gVk-7y-7Jq">
-                                <rect key="frame" x="150" y="90" width="510" height="934.5"/>
+                                <rect key="frame" x="150" y="90" width="510" height="907.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFJ-Hq-nRZ">
                                         <rect key="frame" x="0.0" y="0.0" width="510" height="20.5"/>
@@ -196,13 +196,13 @@
                                         </connections>
                                     </slider>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="object-object_box-of-books" translatesAutoresizingMaskIntoConstraints="NO" id="w8q-ST-7Qr">
-                                        <rect key="frame" x="0.0" y="610" width="510" height="272.5"/>
+                                        <rect key="frame" x="0.0" y="610" width="510" height="245.5"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="w8q-ST-7Qr" secondAttribute="height" multiplier="187:100" id="vaV-Lh-oR3"/>
+                                            <constraint firstAttribute="width" secondItem="w8q-ST-7Qr" secondAttribute="height" multiplier="187:90" id="vaV-Lh-oR3"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHM-tx-s1h">
-                                        <rect key="frame" x="0.0" y="904.5" width="510" height="30"/>
+                                        <rect key="frame" x="0.0" y="877.5" width="510" height="30"/>
                                         <color key="tintColor" systemColor="linkColor"/>
                                         <state key="normal" title="Create New Story"/>
                                         <connections>
