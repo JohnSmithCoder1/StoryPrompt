@@ -23,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGb-6q-K6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2526" y="530"/>
+            <point key="canvasLocation" x="-2290" y="530"/>
         </scene>
         <!--New Story-->
         <scene sceneID="tne-QT-ifu">
@@ -232,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-901" y="-161"/>
+            <point key="canvasLocation" x="-819" y="-168"/>
         </scene>
         <!--Story Prompt View Controller-->
         <scene sceneID="yJe-g1-2zc">
@@ -269,7 +269,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ie-Xv-EwG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="CfR-Go-rJg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-678.51851851851848" y="529.44444444444446"/>
+            <point key="canvasLocation" x="-819" y="530"/>
         </scene>
         <!--My Stories-->
         <scene sceneID="zDP-3i-GzC">
