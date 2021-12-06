@@ -17,6 +17,8 @@ class AddStoryPromptViewController: UIViewController {
   @IBOutlet weak var numberLabel: UILabel!
   @IBOutlet weak var storyPromptImageView: UIImageView!
   
+  @IBOutlet weak var noun2TextField: UITextField!
+  
   let storyPrompt = StoryPromptEntry()
   
   deinit {
@@ -61,6 +63,7 @@ class AddStoryPromptViewController: UIViewController {
     storyPrompt.noun = nounTextField.text ?? ""
     storyPrompt.adjective = adjectiveTextField.text ?? ""
     storyPrompt.verb = verbTextField.text ?? ""
+    storyPrompt.noun2 = noun2TextField.text ?? ""
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

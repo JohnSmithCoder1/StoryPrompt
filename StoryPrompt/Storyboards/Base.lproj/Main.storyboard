@@ -222,6 +222,7 @@
                     <navigationItem key="navigationItem" title="New Story" id="ESN-I5-zz7"/>
                     <connections>
                         <outlet property="adjectiveTextField" destination="GqE-Fj-JPO" id="xBb-fS-Non"/>
+                        <outlet property="noun2TextField" destination="vZe-6H-oPO" id="1QX-30-WcQ"/>
                         <outlet property="nounTextField" destination="HD3-ec-7kL" id="Wiz-Df-FyN"/>
                         <outlet property="numberLabel" destination="5GC-tk-uF7" id="B9C-R5-MY1"/>
                         <outlet property="numberSlider" destination="Ael-PH-d0m" id="Map-9h-IJU"/>

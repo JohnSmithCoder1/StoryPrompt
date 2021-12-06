@@ -9,10 +9,14 @@ import Foundation
 import UIKit
 
 class StoryPromptEntry {
-  var number = 7
-  var verb = ""
-  var adjective = ""
   var noun = ""
+  var adjective = ""
+  var verb = ""
+  var number = 6
+  var noun2 = ""
+  var adjective2 = ""
+  var verb2 = ""
+  var number2 = 6
   var image = UIImage(named: "object-object_box-of-books")
   var genre = StoryPrompts.Genre.unicorns
   var text = ""
@@ -22,15 +26,16 @@ class StoryPromptEntry {
   }
   
   func isValid() -> Bool {
-    return !(verb.isEmpty || adjective.isEmpty || noun.isEmpty)
+    return !(noun.isEmpty || adjective.isEmpty || verb.isEmpty || noun2.isEmpty )
   }
 }
 
 extension StoryPromptEntry: CustomStringConvertible {
   var description: String {
     return text.replacingOccurrences(of: "<noun>", with: noun)
+      .replacingOccurrences(of: "<adjective>", with: adjective)
       .replacingOccurrences(of: "<verb>", with: verb)
       .replacingOccurrences(of: "<number>", with: String(number))
-      .replacingOccurrences(of: "<adjective>", with: adjective)
+      .replacingOccurrences(of: "<noun2>", with: noun2)
   }
 }
