@@ -28,13 +28,13 @@ class AddStoryPromptViewController: UIViewController {
     storyPrompt.number = Int(sender.value)
   }
   
-  @IBAction func changeStoryType(_ sender: UISegmentedControl) {
-    if let genre = StoryPrompts.Genre(rawValue: sender.selectedSegmentIndex) {
-      storyPrompt.genre = genre
-    } else {
-      storyPrompt.genre = .unicorns
-    }
-  }
+//  @IBAction func changeStoryType(_ sender: UISegmentedControl) {
+//    if let genre = StoryPrompts.Genre(rawValue: sender.selectedSegmentIndex) {
+//      storyPrompt.genre = genre
+//    } else {
+//      storyPrompt.genre = .unicorns
+//    }
+//  }
   
   @IBAction func generateStoryPrompt(_ sender: Any) {
     updateStoryPrompt()
