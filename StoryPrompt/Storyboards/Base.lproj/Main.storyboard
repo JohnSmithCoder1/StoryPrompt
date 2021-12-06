@@ -55,7 +55,7 @@
                                                 <rect key="frame" x="49" y="0.0" width="461" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="jtg-cN-ZsC"/>
                                                 </connections>
@@ -75,7 +75,7 @@
                                                 <rect key="frame" x="78.5" y="0.0" width="431.5" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="8BP-qh-TJq"/>
                                                 </connections>
@@ -95,7 +95,7 @@
                                                 <rect key="frame" x="44" y="0.0" width="466" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="eRj-hf-QyE"/>
                                                 </connections>
@@ -134,7 +134,7 @@
                                                 <rect key="frame" x="49" y="0.0" width="461" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="NNC-db-twV"/>
                                                 </connections>
@@ -154,7 +154,7 @@
                                                 <rect key="frame" x="78.5" y="0.0" width="431.5" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="hES-Qn-6BP"/>
                                                 </connections>
@@ -174,7 +174,7 @@
                                                 <rect key="frame" x="44" y="0.0" width="466" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Rkc-7L-dMN"/>
                                                 </connections>
@@ -191,6 +191,7 @@
                                         <rect key="frame" x="-2" y="558" width="514" height="31"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <action selector="changeNumber2:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Rf-94-Io5"/>
                                             <action selector="changeNumber:" destination="BYZ-38-t0r" eventType="valueChanged" id="OYC-a9-NnU"/>
                                         </connections>
                                     </slider>
@@ -221,12 +222,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Story" id="ESN-I5-zz7"/>
                     <connections>
+                        <outlet property="adjective2TextField" destination="caN-9R-8L4" id="ptK-Lz-Ltk"/>
                         <outlet property="adjectiveTextField" destination="GqE-Fj-JPO" id="xBb-fS-Non"/>
                         <outlet property="noun2TextField" destination="vZe-6H-oPO" id="1QX-30-WcQ"/>
                         <outlet property="nounTextField" destination="HD3-ec-7kL" id="Wiz-Df-FyN"/>
+                        <outlet property="number2Label" destination="x5K-EI-bhD" id="rfS-Zk-N0r"/>
+                        <outlet property="number2Slider" destination="vbF-NW-rVa" id="dCC-Ff-Jl4"/>
                         <outlet property="numberLabel" destination="5GC-tk-uF7" id="B9C-R5-MY1"/>
                         <outlet property="numberSlider" destination="Ael-PH-d0m" id="Map-9h-IJU"/>
                         <outlet property="storyPromptImageView" destination="w8q-ST-7Qr" id="F4m-Hl-vEb"/>
+                        <outlet property="verb2TextField" destination="OFF-fD-tKx" id="D0X-Jd-W86"/>
                         <outlet property="verbTextField" destination="jYC-Qy-1mG" id="tce-xP-NDR"/>
                         <segue destination="gDt-2V-MOx" kind="show" identifier="StoryPrompt" id="0dy-g7-m5s"/>
                     </connections>

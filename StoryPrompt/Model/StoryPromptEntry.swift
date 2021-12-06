@@ -26,7 +26,12 @@ class StoryPromptEntry {
   }
   
   func isValid() -> Bool {
-    return !(noun.isEmpty || adjective.isEmpty || verb.isEmpty || noun2.isEmpty )
+    return !(noun.isEmpty ||
+             adjective.isEmpty ||
+             verb.isEmpty ||
+             noun2.isEmpty ||
+             adjective2.isEmpty ||
+             verb2.isEmpty)
   }
 }
 
@@ -37,5 +42,8 @@ extension StoryPromptEntry: CustomStringConvertible {
       .replacingOccurrences(of: "<verb>", with: verb)
       .replacingOccurrences(of: "<number>", with: String(number))
       .replacingOccurrences(of: "<noun2>", with: noun2)
+      .replacingOccurrences(of: "<adjective2>", with: adjective2)
+      .replacingOccurrences(of: "<verb2>", with: verb2)
+      .replacingOccurrences(of: "<number2>", with: String(number2))
   }
 }

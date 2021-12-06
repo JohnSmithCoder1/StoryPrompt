@@ -18,6 +18,10 @@ class AddStoryPromptViewController: UIViewController {
   @IBOutlet weak var storyPromptImageView: UIImageView!
   
   @IBOutlet weak var noun2TextField: UITextField!
+  @IBOutlet weak var adjective2TextField: UITextField!
+  @IBOutlet weak var verb2TextField: UITextField!
+  @IBOutlet weak var number2Slider: UISlider!
+  @IBOutlet weak var number2Label: UILabel!
   
   let storyPrompt = StoryPromptEntry()
   
@@ -30,7 +34,12 @@ class AddStoryPromptViewController: UIViewController {
     storyPrompt.number = Int(sender.value)
   }
   
-//  @IBAction func changeStoryType(_ sender: UISegmentedControl) {
+  @IBAction func changeNumber2(_ sender: UISlider) {
+    number2Label.text = "Number: \(Int(sender.value))"
+    storyPrompt.number2 = Int(sender.value)
+  }
+  
+  //  @IBAction func changeStoryType(_ sender: UISegmentedControl) {
 //    if let genre = StoryPrompts.Genre(rawValue: sender.selectedSegmentIndex) {
 //      storyPrompt.genre = genre
 //    } else {
@@ -64,6 +73,8 @@ class AddStoryPromptViewController: UIViewController {
     storyPrompt.adjective = adjectiveTextField.text ?? ""
     storyPrompt.verb = verbTextField.text ?? ""
     storyPrompt.noun2 = noun2TextField.text ?? ""
+    storyPrompt.adjective2 = adjective2TextField.text ?? ""
+    storyPrompt.verb2 = verb2TextField.text ?? ""
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
