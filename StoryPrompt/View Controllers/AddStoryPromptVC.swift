@@ -16,7 +16,7 @@ class AddStoryPromptViewController: UIViewController {
   @IBOutlet weak var verbTextField: UITextField!
   @IBOutlet weak var numberSlider: UISlider!
   @IBOutlet weak var numberLabel: UILabel!
-  @IBOutlet weak var storyPromptImageView: UIImageView!
+ 
   
   @IBOutlet weak var name2TextField: UITextField!
   @IBOutlet weak var noun2TextField: UITextField!
@@ -24,7 +24,7 @@ class AddStoryPromptViewController: UIViewController {
   @IBOutlet weak var verb2TextField: UITextField!
   @IBOutlet weak var number2Slider: UISlider!
   @IBOutlet weak var number2Label: UILabel!
-  
+    
   let storyPrompt = StoryPromptEntry()
   
   deinit {
