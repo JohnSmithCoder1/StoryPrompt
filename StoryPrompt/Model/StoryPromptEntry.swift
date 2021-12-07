@@ -9,10 +9,12 @@ import Foundation
 import UIKit
 
 class StoryPromptEntry {
+  var name = ""
   var noun = ""
   var adjective = ""
   var verb = ""
   var number = 6
+  var name2 = ""
   var noun2 = ""
   var adjective2 = ""
   var verb2 = ""
@@ -26,9 +28,11 @@ class StoryPromptEntry {
   }
   
   func isValid() -> Bool {
-    return !(noun.isEmpty ||
+    return !(name.isEmpty ||
+             noun.isEmpty ||
              adjective.isEmpty ||
              verb.isEmpty ||
+             name2.isEmpty ||
              noun2.isEmpty ||
              adjective2.isEmpty ||
              verb2.isEmpty)
@@ -37,10 +41,13 @@ class StoryPromptEntry {
 
 extension StoryPromptEntry: CustomStringConvertible {
   var description: String {
-    return text.replacingOccurrences(of: "<noun>", with: noun)
+    return text
+      .replacingOccurrences(of: "<name>", with: name)
+      .replacingOccurrences(of: "<noun>", with: noun)
       .replacingOccurrences(of: "<adjective>", with: adjective)
       .replacingOccurrences(of: "<verb>", with: verb)
       .replacingOccurrences(of: "<number>", with: String(number))
+      .replacingOccurrences(of: "<name2>", with: name2)
       .replacingOccurrences(of: "<noun2>", with: noun2)
       .replacingOccurrences(of: "<adjective2>", with: adjective2)
       .replacingOccurrences(of: "<verb2>", with: verb2)

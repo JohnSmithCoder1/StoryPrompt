@@ -10,6 +10,7 @@ import PhotosUI
 
 class AddStoryPromptViewController: UIViewController {
   
+  @IBOutlet weak var nameTextField: UITextField!
   @IBOutlet weak var nounTextField: UITextField!
   @IBOutlet weak var adjectiveTextField: UITextField!
   @IBOutlet weak var verbTextField: UITextField!
@@ -17,6 +18,7 @@ class AddStoryPromptViewController: UIViewController {
   @IBOutlet weak var numberLabel: UILabel!
   @IBOutlet weak var storyPromptImageView: UIImageView!
   
+  @IBOutlet weak var name2TextField: UITextField!
   @IBOutlet weak var noun2TextField: UITextField!
   @IBOutlet weak var adjective2TextField: UITextField!
   @IBOutlet weak var verb2TextField: UITextField!
@@ -69,9 +71,11 @@ class AddStoryPromptViewController: UIViewController {
   }
   
   @objc func updateStoryPrompt() {
+    storyPrompt.name = nameTextField.text ?? ""
     storyPrompt.noun = nounTextField.text ?? ""
     storyPrompt.adjective = adjectiveTextField.text ?? ""
     storyPrompt.verb = verbTextField.text ?? ""
+    storyPrompt.name2 = name2TextField.text ?? ""
     storyPrompt.noun2 = noun2TextField.text ?? ""
     storyPrompt.adjective2 = adjective2TextField.text ?? ""
     storyPrompt.verb2 = verb2TextField.text ?? ""
